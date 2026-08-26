@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Request a Quote | Apollo Paints</title>
+<meta name="description" content="Request a quote on Apollo Paints industrial coatings, wood finishes, epoxies and resins."/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;family=Montserrat:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#162839",
+              "on-primary": "#ffffff",
+              "primary-container": "#2c3e50",
+              "on-primary-container": "#96a9be",
+              "primary-fixed-dim": "#b5c8df",
+              "on-primary-fixed-variant": "#36485b",
+              "deep-slate": "#34495E",
+              "cobalt-pigment": "#2980B9",
+              "industrial-orange": "#D35400",
+              "secondary": "#944a00",
+              "secondary-fixed": "#ffdcc5",
+              "secondary-fixed-dim": "#ffb783",
+              "surface": "#f8f9fa",
+              "surface-white": "#FFFFFF",
+              "surface-variant": "#e1e3e4",
+              "surface-container": "#edeeef",
+              "surface-container-low": "#f3f4f5",
+              "surface-container-lowest": "#ffffff",
+              "on-surface": "#191c1d",
+              "on-surface-variant": "#43474c",
+              "outline": "#74777d",
+              "outline-variant": "#c4c6cd",
+              "error": "#ba1a1a"
+            },
+            borderRadius: { DEFAULT: "0.125rem", lg: "0.25rem", xl: "0.5rem", full: "9999px" },
+            spacing: { "margin-mobile": "20px", "gutter": "24px", "margin-desktop": "64px", "unit": "8px" },
+            fontFamily: {
+              "body-md": ["Inter"], "body-lg": ["Inter"], "label-caps": ["Inter"],
+              "display-lg": ["Montserrat"], "headline-md": ["Montserrat"]
+            },
+            fontSize: {
+              "body-md": ["16px", {"lineHeight":"1.5","fontWeight":"400"}],
+              "body-lg": ["18px", {"lineHeight":"1.6","fontWeight":"400"}],
+              "label-caps": ["12px", {"lineHeight":"1.0","letterSpacing":"0.1em","fontWeight":"700"}],
+              "headline-md": ["24px", {"lineHeight":"1.3","fontWeight":"600"}],
+              "display-lg": ["48px", {"lineHeight":"1.1","letterSpacing":"-0.02em","fontWeight":"700"}]
+            }
+          }
+        }
+      }
+</script>
+<style>
+  body { font-family: 'Inter', sans-serif; background-color: #f8f9fa; }
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+  .transition-soft { transition: all .4s cubic-bezier(.16,1,.3,1); }
+</style>
+</head>
+<body class="text-on-surface">
+<nav id="site-nav" class="fixed top-0 w-full z-50 bg-surface border-b border-outline-variant">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4">
+<a href="index.html" class="text-[18px] md:text-headline-md font-headline-md font-bold text-primary tracking-tighter">APOLLO PAINTS</a>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-on-surface-variant hover:text-industrial-orange font-label-caps text-label-caps font-bold transition-colors duration-200" href="index.html">Home</a>
+<a class="text-on-surface-variant hover:text-industrial-orange font-label-caps text-label-caps font-bold transition-colors duration-200" href="catalog.html">Products</a>
+<a class="text-on-surface-variant hover:text-industrial-orange font-label-caps text-label-caps font-bold transition-colors duration-200" href="industries.html">Industries</a>
+<a class="text-on-surface-variant hover:text-industrial-orange font-label-caps text-label-caps font-bold transition-colors duration-200" href="about.html">About Us</a>
+</div>
+<div class="flex items-center gap-3">
+<a href="inquiry.html" class="bg-primary text-on-primary px-5 md:px-6 py-3 font-label-caps text-label-caps hover:bg-industrial-orange transition-soft">GET A QUOTE</a>
+<button id="menu-btn" class="md:hidden text-primary" aria-label="Menu"><span class="material-symbols-outlined">menu</span></button>
+</div>
+</div>
+<div id="mobile-menu" class="hidden md:hidden flex-col gap-1 px-margin-mobile pb-4 border-t border-outline-variant">
+<a class="py-3 font-label-caps text-label-caps text-on-surface-variant" href="index.html">HOME</a>
+<a class="py-3 font-label-caps text-label-caps text-on-surface-variant" href="catalog.html">PRODUCTS</a>
+<a class="py-3 font-label-caps text-label-caps text-on-surface-variant" href="industries.html">INDUSTRIES</a>
+<a class="py-3 font-label-caps text-label-caps text-on-surface-variant" href="about.html">ABOUT US</a>
+</div>
+</nav>
+<main class="pt-24 pb-24">
+<div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+
+<div class="lg:col-span-7">
+<span class="font-label-caps text-label-caps text-industrial-orange mb-2 block">REQUEST A QUOTE</span>
+<h1 class="font-display-lg text-[28px] md:text-display-lg text-primary mb-4">Tell us what you need</h1>
+<p class="text-body-lg text-on-surface-variant mb-10 max-w-xl">Add the products you want priced, leave your details, and we'll get back to you with a quote.</p>
+
+<form id="quote-form" action="https://formsubmit.co/karanbansal80@gmail.com" method="POST" class="space-y-8">
+<input type="hidden" name="_subject" value="New quote request from the Apollo Paints website"/>
+<input type="hidden" name="_template" value="table"/>
+<input type="hidden" name="_captcha" value="false"/>
+<input type="text" name="_honey" style="display:none"/>
+
+<div>
+<label class="block font-label-caps text-label-caps text-deep-slate mb-2">Products you'd like quoted</label>
+<div id="chips" class="flex flex-wrap gap-2 mb-3"></div>
+<p id="chips-empty" class="text-body-md text-outline mb-3">Nothing selected yet &mdash; add products below, or <a class="text-industrial-orange underline" href="catalog.html">browse the catalogue</a>.</p>
+<div class="flex flex-col sm:flex-row gap-3">
+<select id="product-picker" class="flex-grow bg-surface-white border border-outline-variant px-4 py-3 text-body-md focus:border-industrial-orange outline-none">
+<option value="">Select a product to add&hellip;</option>
+<option value="Industrial Coatings – Primers">Industrial Coatings – Primers</option>
+<option value="Industrial Coatings – Synthetic Enamel">Industrial Coatings – Synthetic Enamel</option>
+<option value="Industrial Coatings – PU Enamel">Industrial Coatings – PU Enamel</option>
+<option value="Industrial Coatings – Automotive Finishes">Industrial Coatings – Automotive Finishes</option>
+<option value="Industrial Coatings – Texture Finishes">Industrial Coatings – Texture Finishes</option>
+<option value="Industrial Coatings – Synthetic Putty">Industrial Coatings – Synthetic Putty</option>
+<option value="Wood Finishes – Lacquer">Wood Finishes – Lacquer</option>
+<option value="Wood Finishes – Sealers">Wood Finishes – Sealers</option>
+<option value="Speciality Epoxies – 3:1 Epoxy Systems">Speciality Epoxies – 3:1 Epoxy Systems</option>
+<option value="Speciality Epoxies – 2:1 Epoxy Systems">Speciality Epoxies – 2:1 Epoxy Systems</option>
+<option value="Speciality Resins – Alkyds">Speciality Resins – Alkyds</option>
+<option value="Speciality Resins – Rosinated Alkyds">Speciality Resins – Rosinated Alkyds</option>
+<option value="Speciality Resins – Uralkyds">Speciality Resins – Uralkyds</option>
+<option value="Speciality Resins – CNSL">Speciality Resins – CNSL</option>
+<option value="Speciality Resins – Epoxy Advance Systems">Speciality Resins – Epoxy Advance Systems</option>
+</select>
+<button type="button" id="add-product" class="bg-deep-slate text-on-primary px-8 py-3 font-label-caps text-label-caps hover:bg-industrial-orange transition-soft">ADD</button>
+</div>
+<input type="hidden" id="products-field" name="Products" value=""/>
+</div>
+
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div><label class="block font-label-caps text-label-caps text-deep-slate mb-2" for="name">Full Name *</label>
+<input class="w-full bg-surface-white border border-outline-variant px-4 py-3 text-body-md focus:border-industrial-orange outline-none transition-colors" id="name" name="Name" type="text" required placeholder="Your name"/></div>
+<div><label class="block font-label-caps text-label-caps text-deep-slate mb-2" for="company">Company</label>
+<input class="w-full bg-surface-white border border-outline-variant px-4 py-3 text-body-md focus:border-industrial-orange outline-none transition-colors" id="company" name="Company" type="text" placeholder="Business name (optional)"/></div>
+<div><label class="block font-label-caps text-label-caps text-deep-slate mb-2" for="email">Email *</label>
+<input class="w-full bg-surface-white border border-outline-variant px-4 py-3 text-body-md focus:border-industrial-orange outline-none transition-colors" id="email" name="Email" type="email" required placeholder="you@company.com"/></div>
+<div><label class="block font-label-caps text-label-caps text-deep-slate mb-2" for="phone">Phone *</label>
+<input class="w-full bg-surface-white border border-outline-variant px-4 py-3 text-body-md focus:border-industrial-orange outline-none transition-colors" id="phone" name="Phone" type="tel" required placeholder="+91 XXXXX XXXXX" pattern="[0-9+\-\s()]{7,20}"/></div>
+</div>
+
+<div><label class="block font-label-caps text-label-caps text-deep-slate mb-2" for="gst">GST Number</label>
+<input class="w-full bg-surface-white border border-outline-variant px-4 py-3 text-body-md focus:border-industrial-orange outline-none transition-colors" id="gst" name="GST" type="text" placeholder="15-digit GSTIN (optional)"/></div>
+
+<div><label class="block font-label-caps text-label-caps text-deep-slate mb-2" for="message">Your Query *</label>
+<textarea class="w-full bg-surface-white border border-outline-variant px-4 py-3 text-body-md focus:border-industrial-orange outline-none transition-colors" id="message" name="Query" rows="5" required placeholder="Quantities, shades, pack sizes, delivery location, or anything else we should know."></textarea></div>
+
+<button type="submit" id="submit-btn" class="w-full bg-primary text-on-primary py-5 font-label-caps text-label-caps tracking-widest hover:bg-industrial-orange transition-soft flex items-center justify-center gap-2">
+SEND ENQUIRY <span class="material-symbols-outlined text-[18px]">arrow_forward</span></button>
+
+<p id="form-status" class="hidden text-body-md p-4 border"></p>
+</form>
+</div>
+
+<aside class="lg:col-span-5">
+<div class="border border-outline-variant overflow-hidden mb-8 h-56">
+<img class="w-full h-full object-cover" referrerpolicy="no-referrer" alt="Pigment mixing" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlx5qdRgAHEYHDfuCAHz9QHCWOwpf3ligFmEvYshYDNK6AeKb-imKiNsjlolgEohtn7AFqgUpec2-fnW4PGWUt48QdFfNlQvlABvdRTdN5DIOafz3b0be0_QLk3qMUyvpxCTjy3eX1J_ybHC4k9IwdNR9a8QDqr51vByFNuNM9VvNPI0-9I_Dnaz_ncG5lPv6LlPHwkDoA7F-1clIg0-MUVheteCPYRwDUM-hrSp8tiRFSoJBKZz3dC_olEloi-oP0jRVSlAUwjpAf"/>
+</div>
+<div class="bg-surface-white border border-outline-variant p-8 mb-8">
+<h2 class="font-headline-md text-headline-md text-primary mb-6">Reach us directly</h2>
+<div class="space-y-5">
+<div class="flex gap-4"><span class="material-symbols-outlined text-industrial-orange">call</span>
+<div><p class="font-label-caps text-label-caps text-deep-slate mb-1">PHONE</p>
+<a class="text-body-md text-on-surface-variant hover:text-industrial-orange" href="tel:+917494988779">+91 74949 88779</a></div></div>
+<div class="flex gap-4"><span class="material-symbols-outlined text-industrial-orange">chat</span>
+<div><p class="font-label-caps text-label-caps text-deep-slate mb-1">WHATSAPP</p>
+<a class="text-body-md text-on-surface-variant hover:text-industrial-orange" target="_blank" rel="noopener noreferrer" href="https://wa.me/917494988779">Message us on WhatsApp</a></div></div>
+<div class="flex gap-4"><span class="material-symbols-outlined text-industrial-orange">mail</span>
+<div><p class="font-label-caps text-label-caps text-deep-slate mb-1">EMAIL</p>
+<a class="text-body-md text-on-surface-variant hover:text-industrial-orange" href="mailto:sales@apollopaintsglobal.com">sales@apollopaintsglobal.com</a></div></div>
+<div class="flex gap-4"><span class="material-symbols-outlined text-industrial-orange">location_on</span>
+<div><p class="font-label-caps text-label-caps text-deep-slate mb-1">ADDRESS</p>
+<p class="text-body-md text-on-surface-variant">Village Jairampur,<br/>Karnal, Haryana &ndash; 132001</p></div></div>
+</div>
+</div>
+<div class="bg-surface-container-low border border-outline-variant p-8">
+<h3 class="font-headline-md text-[18px] text-primary mb-3">What happens next</h3>
+<ol class="space-y-3 text-body-md text-on-surface-variant list-decimal list-inside">
+<li>We review your requirement and confirm the right product grade.</li>
+<li>You get a quote with pricing, pack sizes and lead time.</li>
+<li>We arrange a sample where it makes sense before you commit.</li>
+</ol>
+</div>
+</aside>
+
+</div>
+</div>
+</main>
+
+<script>
+const ALL_PRODUCTS = ["Industrial Coatings \u2013 Primers", "Industrial Coatings \u2013 Synthetic Enamel", "Industrial Coatings \u2013 PU Enamel", "Industrial Coatings \u2013 Automotive Finishes", "Industrial Coatings \u2013 Texture Finishes", "Industrial Coatings \u2013 Synthetic Putty", "Wood Finishes \u2013 Lacquer", "Wood Finishes \u2013 Sealers", "Speciality Epoxies \u2013 3:1 Epoxy Systems", "Speciality Epoxies \u2013 2:1 Epoxy Systems", "Speciality Resins \u2013 Alkyds", "Speciality Resins \u2013 Rosinated Alkyds", "Speciality Resins \u2013 Uralkyds", "Speciality Resins \u2013 CNSL", "Speciality Resins \u2013 Epoxy Advance Systems"];
+const chosen = [];
+
+const params = new URLSearchParams(location.search);
+const pre = params.get('products');
+if (pre) pre.split('|').map(s => s.trim()).filter(Boolean).forEach(p => { if (!chosen.includes(p)) chosen.push(p); });
+
+const chipsEl = document.getElementById('chips');
+const emptyEl = document.getElementById('chips-empty');
+const fieldEl = document.getElementById('products-field');
+
+function renderChips() {
+  chipsEl.innerHTML = '';
+  chosen.forEach((p, i) => {
+    const el = document.createElement('span');
+    el.className = 'inline-flex items-center gap-2 bg-primary text-on-primary px-4 py-2 text-body-md';
+    el.innerHTML = '<span>' + p + '</span>';
+    const x = document.createElement('button');
+    x.type = 'button';
+    x.className = 'material-symbols-outlined text-[16px] hover:text-industrial-orange';
+    x.textContent = 'close';
+    x.setAttribute('aria-label', 'Remove ' + p);
+    x.onclick = () => { chosen.splice(i, 1); renderChips(); };
+    el.appendChild(x);
+    chipsEl.appendChild(el);
+  });
+  emptyEl.classList.toggle('hidden', chosen.length > 0);
+  fieldEl.value = chosen.join(', ');
+}
+
+document.getElementById('add-product').onclick = () => {
+  const sel = document.getElementById('product-picker');
+  const v = sel.value;
+  if (v && !chosen.includes(v)) { chosen.push(v); renderChips(); }
+  sel.value = '';
+};
+
+renderChips();
+
+const form = document.getElementById('quote-form');
+const status = document.getElementById('form-status');
+const btn = document.getElementById('submit-btn');
+
+form.addEventListener('submit', async (e) => {
+  if (location.protocol === 'file:') return; // let the plain POST run when opened locally
+  e.preventDefault();
+  btn.disabled = true;
+  btn.classList.add('opacity-60');
+  btn.textContent = 'SENDING\u2026';
+  try {
+    const res = await fetch('https://formsubmit.co/ajax/karanbansal80@gmail.com', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify(Object.fromEntries(new FormData(form).entries()))
+    });
+    if (!res.ok) throw new Error('bad response');
+    form.reset();
+    chosen.length = 0;
+    renderChips();
+    status.className = 'text-body-md p-4 border border-cobalt-pigment bg-cobalt-pigment/10 text-primary';
+    status.textContent = 'Thanks \u2014 your enquiry is in. We\u2019ll be in touch shortly.';
+  } catch (err) {
+    status.className = 'text-body-md p-4 border border-error bg-error/10 text-error';
+    status.innerHTML = 'Something went wrong sending that. Please email <a class="underline" href="mailto:sales@apollopaintsglobal.com">sales@apollopaintsglobal.com</a> or call +91 74949 88779.';
+  }
+  status.classList.remove('hidden');
+  btn.disabled = false;
+  btn.classList.remove('opacity-60');
+  btn.innerHTML = 'SEND ENQUIRY <span class="material-symbols-outlined text-[18px]">arrow_forward</span>';
+});
+</script>
+<footer class="w-full py-16 px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter bg-primary text-on-primary">
+<div class="col-span-1 md:col-span-2">
+<div class="font-headline-md text-headline-md mb-4">APOLLO PAINTS</div>
+<p class="font-body-md text-body-md text-surface-variant opacity-70 max-w-sm">Manufacturers of industrial coatings, wood finishes, speciality epoxies and resins.</p>
+</div>
+<div class="flex flex-col gap-3">
+<h5 class="font-label-caps text-label-caps text-secondary-fixed mb-1">EXPLORE</h5>
+<a class="text-surface-variant text-body-md hover:text-secondary-fixed-dim transition-colors" href="catalog.html">Products</a>
+<a class="text-surface-variant text-body-md hover:text-secondary-fixed-dim transition-colors" href="industries.html">Industries We Serve</a>
+<a class="text-surface-variant text-body-md hover:text-secondary-fixed-dim transition-colors" href="about.html">About Us</a>
+<a class="text-surface-variant text-body-md hover:text-secondary-fixed-dim transition-colors" href="inquiry.html">Request a Quote</a>
+</div>
+<div class="flex flex-col gap-3">
+<h5 class="font-label-caps text-label-caps text-secondary-fixed mb-1">CONTACT</h5>
+<p class="text-surface-variant text-body-md opacity-80">Village Jairampur<br/>Karnal, Haryana &ndash; 132001</p>
+<a class="text-surface-variant text-body-md hover:text-secondary-fixed-dim transition-colors" href="tel:+917494988779">+91 74949 88779</a>
+<a class="text-surface-variant text-body-md hover:text-secondary-fixed-dim transition-colors" href="mailto:sales@apollopaintsglobal.com">sales@apollopaintsglobal.com</a>
+<p class="text-surface-variant text-body-md opacity-60">Mon&ndash;Sat, 9am to 6pm</p>
+</div>
+<div class="col-span-1 md:col-span-4 border-t border-on-primary-fixed-variant pt-6 mt-4">
+<p class="font-label-caps text-[10px] text-on-primary-fixed-variant">&copy; 2026 Apollo Paints. All rights reserved.</p>
+</div>
+</footer>
+<a id="wa-fab" href="https://wa.me/917494988779?text=Hello%2C%20I%27d%20like%20a%20quote%20on%20Apollo%20Paints%20products." target="_blank" rel="noopener noreferrer"
+   class="fixed bottom-6 right-6 z-40 flex items-center justify-center w-14 h-14 bg-[#25D366] text-white rounded-full shadow-lg hover:brightness-110 transition-all duration-300" aria-label="WhatsApp">
+<span class="material-symbols-outlined">chat</span>
+</a>
+<script>
+(function(){
+  var b=document.getElementById('menu-btn'),m=document.getElementById('mobile-menu');
+  if(b){b.addEventListener('click',function(){m.classList.toggle('hidden');m.classList.toggle('flex');});}
+  window.addEventListener('scroll',function(){
+    var n=document.getElementById('site-nav');
+    if(window.scrollY>40){n.classList.add('shadow-sm');}else{n.classList.remove('shadow-sm');}
+  });
+})();
+</script>
+</body>
+</html>

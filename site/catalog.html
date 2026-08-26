@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>APPOLLO PAINTS | Wall Emulsions &amp; Textures</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&amp;family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #34495E;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-variant": "#e1e3e4",
+                        "primary-fixed-dim": "#b5c8df",
+                        "on-tertiary-fixed": "#291802",
+                        "deep-slate": "#34495E",
+                        "on-primary-fixed": "#091d2e",
+                        "tertiary-container": "#4e381c",
+                        "primary-container": "#2c3e50",
+                        "secondary": "#944a00",
+                        "on-surface": "#191c1d",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-surface": "#2e3132",
+                        "secondary-fixed-dim": "#ffb783",
+                        "error-container": "#ffdad6",
+                        "primary-fixed": "#d1e4fb",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-fixed": "#ffddb7",
+                        "outline-variant": "#c4c6cd",
+                        "cobalt-pigment": "#2980B9",
+                        "surface-tint": "#4e6073",
+                        "on-primary-fixed-variant": "#36485b",
+                        "primary": "#162839",
+                        "tertiary-fixed-dim": "#e3c19b",
+                        "surface-container-highest": "#e1e3e4",
+                        "surface": "#f8f9fa",
+                        "surface-container-high": "#e7e8e9",
+                        "on-background": "#191c1d",
+                        "on-tertiary-container": "#c1a17d",
+                        "outline": "#74777d",
+                        "tertiary": "#362308",
+                        "on-error-container": "#93000a",
+                        "surface-container-low": "#f3f4f5",
+                        "background": "#f8f9fa",
+                        "surface-white": "#FFFFFF",
+                        "on-primary": "#ffffff",
+                        "inverse-on-surface": "#f0f1f2",
+                        "on-secondary": "#ffffff",
+                        "secondary-container": "#fc8f34",
+                        "on-error": "#ffffff",
+                        "on-secondary-fixed": "#301400",
+                        "on-surface-variant": "#43474c",
+                        "on-primary-container": "#96a9be",
+                        "secondary-fixed": "#ffdcc5",
+                        "surface-container": "#edeeef",
+                        "error": "#ba1a1a",
+                        "on-secondary-fixed-variant": "#713700",
+                        "industrial-orange": "#D35400",
+                        "on-secondary-container": "#663100",
+                        "surface-dim": "#d9dadb",
+                        "surface-bright": "#f8f9fa",
+                        "on-tertiary-fixed-variant": "#5a4225",
+                        "inverse-primary": "#b5c8df"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "20px",
+                        "gutter": "24px",
+                        "container-max": "1280px",
+                        "unit": "8px",
+                        "margin-desktop": "64px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Inter"],
+                        "display-lg": ["Montserrat"],
+                        "headline-md": ["Montserrat"],
+                        "label-caps": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "display-lg-mobile": ["Montserrat"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                        "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "display-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-surface font-body-md text-on-surface selection:bg-industrial-orange selection:text-white">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 bg-surface dark:bg-primary border-b border-outline-variant dark:border-primary-container">
+<div class="flex items-center gap-12">
+<a href="index.html" class="text-[18px] md:text-headline-md font-headline-md font-bold text-primary dark:text-on-primary tracking-tighter">APPOLLO PAINTS</a>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-secondary dark:text-secondary-fixed font-bold border-b-2 border-secondary pb-1 font-label-caps text-label-caps hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="catalog.html">Products</a>
+<a class="text-on-surface-variant dark:text-on-primary-fixed-variant font-medium font-label-caps text-label-caps hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="industries.html">Industries</a>
+<a class="text-on-surface-variant dark:text-on-primary-fixed-variant font-medium font-label-caps text-label-caps hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="about.html">About Us</a>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<div class="relative hidden lg:block">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline">search</span>
+<input class="pl-10 pr-4 py-2 bg-surface-container-low border border-outline-variant focus:border-industrial-orange outline-none text-body-md w-64 transition-all" placeholder="Search Catalog" type="text"/>
+</div>
+<a href="inquiry.html" class="bg-deep-slate text-on-primary font-label-caps text-label-caps px-6 py-3 hover:bg-industrial-orange transition-all duration-300">B2B Inquiry</a>
+</div>
+</nav>
+<main class="pt-24 min-h-screen">
+<div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-12 gap-gutter">
+<!-- SideNavBar / Sidebar Filters -->
+<aside class="col-span-3 hidden lg:flex flex-col gap-unit py-6 bg-surface-container-low dark:bg-primary-container h-[calc(100vh-120px)] sticky top-24 border-r border-outline-variant dark:border-primary">
+<div class="px-6 mb-8">
+<h2 class="font-label-caps text-label-caps text-on-surface-variant mb-1">Filters</h2>
+<p class="font-body-md text-on-surface-variant opacity-70">Refine Industrial Catalog</p>
+</div>
+<!-- Filter Section: Finish -->
+<div class="px-6 mb-6">
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-deep-slate" data-icon="palette">palette</span>
+<span class="font-label-caps text-label-caps text-deep-slate font-bold">Finish</span>
+</div>
+<ul class="space-y-2">
+<li>
+<button class="w-full text-left font-body-md text-on-primary-container dark:text-primary-fixed font-bold translate-x-1 transition-transform duration-150 flex items-center justify-between">
+                                    Matte <span class="material-symbols-outlined text-[16px]">check_circle</span>
+</button>
+</li>
+<li>
+<button class="w-full text-left font-body-md text-on-surface-variant hover:bg-surface-variant transition-colors p-1 px-2 -ml-2">Gloss</button>
+</li>
+<li>
+<button class="w-full text-left font-body-md text-on-surface-variant hover:bg-surface-variant transition-colors p-1 px-2 -ml-2">Sheen</button>
+</li>
+</ul>
+</div>
+<!-- Filter Section: Substrate -->
+<div class="px-6 mb-6">
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-deep-slate" data-icon="layers">layers</span>
+<span class="font-label-caps text-label-caps text-deep-slate font-bold">Substrate</span>
+</div>
+<ul class="space-y-2">
+<li>
+<button class="w-full text-left font-body-md text-on-surface-variant hover:bg-surface-variant transition-colors p-1 px-2 -ml-2">Interior</button>
+</li>
+<li>
+<button class="w-full text-left font-body-md text-on-surface-variant hover:bg-surface-variant transition-colors p-1 px-2 -ml-2">Exterior</button>
+</li>
+<li>
+<button class="w-full text-left font-body-md text-on-surface-variant hover:bg-surface-variant transition-colors p-1 px-2 -ml-2">Ceilings</button>
+</li>
+</ul>
+</div>
+<!-- Filter Section: Price Range -->
+<div class="px-6">
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-deep-slate" data-icon="payments">payments</span>
+<span class="font-label-caps text-label-caps text-deep-slate font-bold">Price Range</span>
+</div>
+<div class="space-y-4">
+<input class="w-full accent-industrial-orange" type="range"/>
+<div class="flex justify-between font-label-caps text-[10px] text-outline">
+<span>₹20/gal</span>
+<span>₹150/gal</span>
+</div>
+</div>
+</div>
+</aside>
+<!-- Product Grid Area -->
+<section class="col-span-12 lg:col-span-9 py-6">
+<div class="flex flex-col gap-4 md:flex-row md:justify-between md:items-end mb-8 border-b border-outline-variant pb-4">
+<div>
+<h1 class="font-headline-md text-headline-md text-primary mb-2">Wall Emulsions &amp; Textures</h1>
+<p class="font-body-md text-on-surface-variant max-w-2xl">Premium grade technical coatings engineered for superior durability, architectural precision, and environmental resistance.</p>
+</div>
+<div class="flex gap-4">
+<span class="font-label-caps text-label-caps text-outline self-center">Showing 12 Products</span>
+<button class="flex items-center gap-2 border border-outline px-4 py-2 font-label-caps text-label-caps">
+                                SORT BY: POPULARITY <span class="material-symbols-outlined text-[16px]">expand_more</span>
+</button>
+</div>
+</div>
+<!-- Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-gutter">
+<!-- Product Card 1 -->
+<div class="group bg-surface-white border border-outline-variant hover:border-deep-slate transition-all duration-300 flex flex-col">
+<div class="relative h-64 overflow-hidden bg-surface-container">
+<img alt="Premium Paint Bucket" class="w-full h-full object-cover grayscale-[0.5] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500" data-alt="A high-end, sleek metallic paint bucket standing in the center of a minimalist, industrial concrete studio. The lighting is cold and professional, casting sharp, architectural shadows. The background is a clean white wall with a single vertical streak of rich navy blue paint, demonstrating a matte finish. The overall aesthetic is clean, corporate, and technically precise." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNwXEWlgY90mxxG1NpBONE-pGpUxF5n1VijyUsA-GO5Z8DejdiRG5xa8q9uP6in6A5XiNtxGizoSrPfeEGamWCsXKmPESy_PyI_H-VqKgTbfeyYaH7yQ8xrNfe8Y0csOS-kldy7R7E-Yj_2L0dUQNWntUm3eTFkOEnNy52Y3IrcOfP7hNM3SgdVNIQcgeLlP3pLYPYkPkIy1LGB2tkBF_vScGLwXHl98zl6JvnVgH5olhKzLwq6yquKQfu2mWPkDiFlJMCAgJQy2Ku"/>
+<div class="absolute top-4 left-4 bg-primary text-on-primary font-label-caps text-[10px] px-3 py-1">MATTE</div>
+<div class="absolute top-4 right-4 bg-cobalt-pigment text-white rounded-full p-1 shadow-md">
+<span class="material-symbols-outlined text-[18px]" data-weight="fill">verified</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-md text-[20px] text-deep-slate leading-tight">Luxuria Silk</h3>
+<span class="font-headline-md text-[20px] text-industrial-orange">₹89.00</span>
+</div>
+<p class="font-body-md text-on-surface-variant text-[14px] mb-6 line-clamp-2">Ultra-smooth finish with light-diffusing technology for a seamless architectural appearance.</p>
+<div class="mt-auto pt-4 border-t border-outline-variant flex items-center justify-between">
+<div class="flex gap-1">
+<div class="w-4 h-4 rounded-full bg-[#E5E7E9] border border-outline-variant"></div>
+<div class="w-4 h-4 rounded-full bg-[#D4E6F1] border border-outline-variant"></div>
+<div class="w-4 h-4 rounded-full bg-[#FAE5D3] border border-outline-variant"></div>
+<span class="text-[10px] font-label-caps text-outline ml-1">+42 Colors</span>
+</div>
+<button class="font-label-caps text-label-caps text-deep-slate hover:text-industrial-orange transition-colors flex items-center gap-1 group/btn">
+                                        VIEW SPECS <span class="material-symbols-outlined text-[16px] group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="group bg-surface-white border border-outline-variant hover:border-deep-slate transition-all duration-300 flex flex-col">
+<div class="relative h-64 overflow-hidden bg-surface-container">
+<img alt="Exterior Paint" class="w-full h-full object-cover grayscale-[0.5] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500" data-alt="Apollo Paints high performance coating container" src="images/primers.jpg"/>
+<div class="absolute top-4 left-4 bg-primary text-on-primary font-label-caps text-[10px] px-3 py-1">EXTERIOR</div>
+<div class="absolute top-4 right-4 bg-industrial-orange text-white rounded-full p-1 shadow-md">
+<span class="material-symbols-outlined text-[18px]" data-weight="fill">shield</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-md text-[20px] text-deep-slate leading-tight">UltraShield Pro</h3>
+<span class="font-headline-md text-[20px] text-industrial-orange">₹114.00</span>
+</div>
+<p class="font-body-md text-on-surface-variant text-[14px] mb-6 line-clamp-2">Advanced polymer coating designed for harsh weather resistance and UV protection.</p>
+<div class="mt-auto pt-4 border-t border-outline-variant flex items-center justify-between">
+<div class="flex gap-2">
+<span class="bg-surface-variant text-on-surface-variant font-label-caps text-[10px] px-2 py-1">ISO 9001</span>
+<span class="bg-surface-variant text-on-surface-variant font-label-caps text-[10px] px-2 py-1">ECO-FRIENDLY</span>
+</div>
+<button class="font-label-caps text-label-caps text-deep-slate hover:text-industrial-orange transition-colors flex items-center gap-1 group/btn">
+                                        VIEW SPECS <span class="material-symbols-outlined text-[16px] group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="group bg-surface-white border border-outline-variant hover:border-deep-slate transition-all duration-300 flex flex-col">
+<div class="relative h-64 overflow-hidden bg-surface-container">
+<img alt="Velvet Paint" class="w-full h-full object-cover grayscale-[0.5] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500" data-alt="A professional close-up of a wall texture being applied by a skilled craftsman in a luxury loft. The lighting is warm and directional, accentuating the deep, velvety texture of the dark charcoal paint. The scene captures the essence of sophisticated interior design, using a palette of deep slate, warm wood tones, and subtle metallic glints. The mood is intimate, premium, and focused on material quality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyDxI3vAm_DL9E4cmCQImZ14qXK1y5TXdielEhlaokryRsL0UOVJFiPhAGW1JUfnYLCQrMZYWzvCLJCrdlXTwb3Y8jmgo_WYamxBYSljXj3eds21aVV6Ol7X58bNmBEHBJnY0NXyzwTsRT2DIqgx5NDCwzBJSYFWp6Md9seZeTrGMZKI79_tuOZKF9WRsoiM8RZEEvvWOIXCy8QYnZub-qE--cgfYguAy-kP0t--WwOdvFMrYxbnrTWsYnsqpZCFE4TsKtqNNgjAE5"/>
+<div class="absolute top-4 left-4 bg-primary text-on-primary font-label-caps text-[10px] px-3 py-1">VELVET</div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-md text-[20px] text-deep-slate leading-tight">Velvet Matte</h3>
+<span class="font-headline-md text-[20px] text-industrial-orange">₹95.00</span>
+</div>
+<p class="font-body-md text-on-surface-variant text-[14px] mb-6 line-clamp-2">A luxurious high-opacity finish that provides a rich, non-reflective velvety texture.</p>
+<div class="mt-auto pt-4 border-t border-outline-variant flex items-center justify-between">
+<div class="flex gap-1">
+<div class="w-4 h-4 rounded-full bg-[#17202A] border border-outline-variant"></div>
+<div class="w-4 h-4 rounded-full bg-[#424949] border border-outline-variant"></div>
+<div class="w-4 h-4 rounded-full bg-[#7B7D7D] border border-outline-variant"></div>
+<span class="text-[10px] font-label-caps text-outline ml-1">+15 Shades</span>
+</div>
+<button class="font-label-caps text-label-caps text-deep-slate hover:text-industrial-orange transition-colors flex items-center gap-1 group/btn">
+                                        VIEW SPECS <span class="material-symbols-outlined text-[16px] group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="group bg-surface-white border border-outline-variant hover:border-deep-slate transition-all duration-300 flex flex-col">
+<div class="relative h-64 overflow-hidden bg-surface-container">
+<img alt="Ceiling Paint" class="w-full h-full object-cover grayscale-[0.5] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500" data-alt="An expansive view of a modern gallery ceiling with complex geometric structures, painted in a brilliant, flat architectural white. High-key lighting fills the space, creating a sense of immense breathing room and purity. The image captures the technical precision of the paint application over metal and plaster surfaces. The aesthetic is starkly minimalist and airy, using variations of white and light grey." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqhERi9c1ShkCYkerzE15S7yDzn5EffEsvcJTZfRO1DT0zTaJkO3rKbN0YZUVxkOiR--LmuSy5bgjKqySvEwCjUmFBIO96bsaXE-CXuK3MUbnhVGC_NjL0KMnIWm-htVdVUyvwF-VD1SG1Fut5NWwwwPaSvYXzeIBG8FJi9TLxBvIkwB7boWyR4_k63I28voILCaDOk7EzPpGB5Ybq3uuu446WK580lxySiHHLMK4NZKdXuR_vH2ePXL7ATFM6OcY-UZ3AhZAkmzJI"/>
+<div class="absolute top-4 left-4 bg-primary text-on-primary font-label-caps text-[10px] px-3 py-1">CEILING</div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-md text-[20px] text-deep-slate leading-tight">Apex Ceiling Flat</h3>
+<span class="font-headline-md text-[20px] text-industrial-orange">₹72.00</span>
+</div>
+<p class="font-body-md text-on-surface-variant text-[14px] mb-6 line-clamp-2">High-hide formula designed to minimize surface imperfections on large overhead areas.</p>
+<div class="mt-auto pt-4 border-t border-outline-variant flex items-center justify-between">
+<div class="flex gap-2">
+<span class="bg-surface-variant text-on-surface-variant font-label-caps text-[10px] px-2 py-1">FAST DRY</span>
+</div>
+<button class="font-label-caps text-label-caps text-deep-slate hover:text-industrial-orange transition-colors flex items-center gap-1 group/btn">
+                                        VIEW SPECS <span class="material-symbols-outlined text-[16px] group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 5 -->
+<div class="group bg-surface-white border border-outline-variant hover:border-deep-slate transition-all duration-300 flex flex-col">
+<div class="relative h-64 overflow-hidden bg-surface-container">
+<img alt="Gloss Paint" class="w-full h-full object-cover grayscale-[0.5] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500" data-alt="A macro shot of a wet paint surface showing incredible gloss and reflective properties. The paint is a deep industrial orange, rippling slightly as if just poured. The lighting is dramatic, with a single bright highlight reflecting off the surface, emphasizing its liquid brilliance. The image feels energetic and high-performance, contrasting the bold color against a dark, slate-grey background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcyCMQ_mdoQKUvUXmr5ar2lyoxfJs-UAvogG0pMe6V_B_vss_SGYc7XBFRNWwBG06snfpAYFCKXUHEyGGdfWEybyOOxWq1uSU0GTIPThRw0jdz3XCofFL2IGpbd7GvvCi9ibd2-s3fffrcE0M8TqE5OOaI0shQ9OmNkwzGISRZdBYMu7tJPkRvqxSYJ1LR26b9VOBG4ZP9zkxfRjo8hNKp6J_Z9A0OJt_iOTko7ET-bDpgjwLNn_S4311t2z3E_jBzlwEDmHqOdgtR"/>
+<div class="absolute top-4 left-4 bg-primary text-on-primary font-label-caps text-[10px] px-3 py-1">GLOSS</div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-md text-[20px] text-deep-slate leading-tight">Titan Gloss</h3>
+<span class="font-headline-md text-[20px] text-industrial-orange">₹128.00</span>
+</div>
+<p class="font-body-md text-on-surface-variant text-[14px] mb-6 line-clamp-2">Industrial-grade high-gloss enamel providing a mirror-like finish for accent surfaces.</p>
+<div class="mt-auto pt-4 border-t border-outline-variant flex items-center justify-between">
+<div class="flex gap-1">
+<div class="w-4 h-4 rounded-full bg-[#D35400] border border-outline-variant"></div>
+<div class="w-4 h-4 rounded-full bg-[#2E4053] border border-outline-variant"></div>
+<span class="text-[10px] font-label-caps text-outline ml-1">+8 Colors</span>
+</div>
+<button class="font-label-caps text-label-caps text-deep-slate hover:text-industrial-orange transition-colors flex items-center gap-1 group/btn">
+                                        VIEW SPECS <span class="material-symbols-outlined text-[16px] group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 6 -->
+<div class="group bg-surface-white border border-outline-variant hover:border-deep-slate transition-all duration-300 flex flex-col">
+<div class="relative h-64 overflow-hidden bg-surface-container">
+<img alt="Texture Paint" class="w-full h-full object-cover grayscale-[0.5] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500" data-alt="An abstract composition of layered architectural textures in shades of white and light sand. The image shows the coarse, granular surface of a high-performance textured paint under raking light, which reveals deep shadows and highlights. The vibe is sophisticated and material-focused, celebrating the physical properties of industrial coatings in a modern interior setting. Clean, sharp, and detailed." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQriOZ-I14QYEszSMPvTlpEoRYBj4MvI-WHLD792UR1oZRhkv4-L-blKFuwslBn5_W86ocrfquDWtAuVnaRM8q82dlGo7CfnOZHcIdWCFsXbuZg9IY-HzRP9l922MPWqOl8RwOBzyV2ahJ88d_0cthJ76x6OB6nydOZG0oTOFo-7wSXSwYWCoakdEhBDpRT0j0sn-MONt3LJdat8S0xE38dNobc3SFAuhs3CrQjxcmPj5EJq1XkgeiTOkMF0vAXJJiANSHMH5PaTcr"/>
+<div class="absolute top-4 left-4 bg-primary text-on-primary font-label-caps text-[10px] px-3 py-1">TEXTURED</div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-md text-[20px] text-deep-slate leading-tight">Granite-Touch</h3>
+<span class="font-headline-md text-[20px] text-industrial-orange">₹145.00</span>
+</div>
+<p class="font-body-md text-on-surface-variant text-[14px] mb-6 line-clamp-2">Coarse-aggregate masonry coating providing architectural depth and durability.</p>
+<div class="mt-auto pt-4 border-t border-outline-variant flex items-center justify-between">
+<div class="flex gap-2">
+<span class="bg-surface-variant text-on-surface-variant font-label-caps text-[10px] px-2 py-1">MASONRY</span>
+</div>
+<button class="font-label-caps text-label-caps text-deep-slate hover:text-industrial-orange transition-colors flex items-center gap-1 group/btn">
+                                        VIEW SPECS <span class="material-symbols-outlined text-[16px] group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Pagination -->
+<div class="mt-12 flex justify-center items-center gap-2">
+<button class="w-10 h-10 flex items-center justify-center border border-outline-variant text-deep-slate hover:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="w-10 h-10 flex items-center justify-center bg-deep-slate text-on-primary font-bold">1</button>
+<button class="w-10 h-10 flex items-center justify-center border border-outline-variant text-deep-slate hover:bg-surface-variant transition-colors">2</button>
+<button class="w-10 h-10 flex items-center justify-center border border-outline-variant text-deep-slate hover:bg-surface-variant transition-colors">3</button>
+<span class="px-2">...</span>
+<button class="w-10 h-10 flex items-center justify-center border border-outline-variant text-deep-slate hover:bg-surface-variant transition-colors">12</button>
+<button class="w-10 h-10 flex items-center justify-center border border-outline-variant text-deep-slate hover:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</section>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter bg-primary dark:bg-on-primary-fixed mt-24">
+<div class="col-span-1">
+<span class="font-headline-md text-headline-md text-on-primary mb-6 block">APPOLLO PAINTS</span>
+<p class="font-body-md text-surface-variant opacity-70 mb-8 max-w-xs">Global leaders in advanced pigment technology and architectural coatings since 1984.</p>
+<div class="flex gap-4">
+<a class="w-8 h-8 flex items-center justify-center rounded-full border border-surface-variant text-on-primary hover:bg-industrial-orange hover:border-industrial-orange transition-all" href="#"><span class="material-symbols-outlined text-[18px]">public</span></a>
+<a class="w-8 h-8 flex items-center justify-center rounded-full border border-surface-variant text-on-primary hover:bg-industrial-orange hover:border-industrial-orange transition-all" href="#"><span class="material-symbols-outlined text-[18px]">mail</span></a>
+<a class="w-8 h-8 flex items-center justify-center rounded-full border border-surface-variant text-on-primary hover:bg-industrial-orange hover:border-industrial-orange transition-all" href="#"><span class="material-symbols-outlined text-[18px]">share</span></a>
+</div>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-on-primary mb-6">Technical Resources</h4>
+<ul class="space-y-4">
+<li><a class="text-surface-variant dark:text-on-primary-fixed-variant font-medium font-body-md hover:text-secondary-fixed-dim transition-colors" href="#">Industrial Specs</a></li>
+<li><a class="text-surface-variant dark:text-on-primary-fixed-variant font-medium font-body-md hover:text-secondary-fixed-dim transition-colors" href="#">ISO Certifications</a></li>
+<li><a class="text-surface-variant dark:text-on-primary-fixed-variant font-medium font-body-md hover:text-secondary-fixed-dim transition-colors" href="#">MSDS Sheets</a></li>
+<li><a class="text-surface-variant dark:text-on-primary-fixed-variant font-medium font-body-md hover:text-secondary-fixed-dim transition-colors" href="#">Technical Training</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-on-primary mb-6">Corporate</h4>
+<ul class="space-y-4">
+<li><a class="text-surface-variant dark:text-on-primary-fixed-variant font-medium font-body-md hover:text-secondary-fixed-dim transition-colors" href="inquiry.html">Dealer Portal</a></li>
+<li><a class="text-surface-variant dark:text-on-primary-fixed-variant font-medium font-body-md hover:text-secondary-fixed-dim transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="text-surface-variant dark:text-on-primary-fixed-variant font-medium font-body-md hover:text-secondary-fixed-dim transition-colors" href="#">Sustainability</a></li>
+<li><a class="text-surface-variant dark:text-on-primary-fixed-variant font-medium font-body-md hover:text-secondary-fixed-dim transition-colors" href="#">Careers</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-on-primary mb-6">Global Headquarters</h4>
+<p class="font-body-md text-surface-variant opacity-70 mb-4">
+                1200 Industrial Parkway<br/>
+                Tech District, NY 10012
+            </p>
+<p class="font-body-md text-surface-variant font-bold">+1 (800) APPOLLO-PAINTS</p>
+<div class="mt-8 border-t border-on-primary-container pt-8">
+<p class="text-[10px] font-label-caps text-surface-variant opacity-50 uppercase tracking-widest">© 2024 Appollo Paints Global. All technical rights reserved.</p>
+</div>
+</div>
+</footer>
+<!-- Mobile Navigation Toggle Micro-interaction -->
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const rangeInput = document.querySelector('input[type="range"]');
+            rangeInput?.addEventListener('input', (e) => {
+                const val = e.target.value;
+                // Just a micro-interaction effect
+                console.log(`Filtering by price: ${val}%`);
+            });
+        });
+    </script>
+</body></html>

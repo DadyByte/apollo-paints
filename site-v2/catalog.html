@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Products | Apollo Paints</title>
+<meta name="description" content="Browse Apollo Paints industrial coatings, wood finishes, speciality epoxies and resins. Select products and request a quote."/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;family=Montserrat:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#162839",
+              "on-primary": "#ffffff",
+              "primary-container": "#2c3e50",
+              "on-primary-container": "#96a9be",
+              "primary-fixed-dim": "#b5c8df",
+              "on-primary-fixed-variant": "#36485b",
+              "deep-slate": "#34495E",
+              "cobalt-pigment": "#2980B9",
+              "industrial-orange": "#D35400",
+              "secondary": "#944a00",
+              "secondary-fixed": "#ffdcc5",
+              "secondary-fixed-dim": "#ffb783",
+              "surface": "#f8f9fa",
+              "surface-white": "#FFFFFF",
+              "surface-variant": "#e1e3e4",
+              "surface-container": "#edeeef",
+              "surface-container-low": "#f3f4f5",
+              "surface-container-lowest": "#ffffff",
+              "on-surface": "#191c1d",
+              "on-surface-variant": "#43474c",
+              "outline": "#74777d",
+              "outline-variant": "#c4c6cd",
+              "error": "#ba1a1a"
+            },
+            borderRadius: { DEFAULT: "0.125rem", lg: "0.25rem", xl: "0.5rem", full: "9999px" },
+            spacing: { "margin-mobile": "20px", "gutter": "24px", "margin-desktop": "64px", "unit": "8px" },
+            fontFamily: {
+              "body-md": ["Inter"], "body-lg": ["Inter"], "label-caps": ["Inter"],
+              "display-lg": ["Montserrat"], "headline-md": ["Montserrat"]
+            },
+            fontSize: {
+              "body-md": ["16px", {"lineHeight":"1.5","fontWeight":"400"}],
+              "body-lg": ["18px", {"lineHeight":"1.6","fontWeight":"400"}],
+              "label-caps": ["12px", {"lineHeight":"1.0","letterSpacing":"0.1em","fontWeight":"700"}],
+              "headline-md": ["24px", {"lineHeight":"1.3","fontWeight":"600"}],
+              "display-lg": ["48px", {"lineHeight":"1.1","letterSpacing":"-0.02em","fontWeight":"700"}]
+            }
+          }
+        }
+      }
+</script>
+<style>
+  body { font-family: 'Inter', sans-serif; background-color: #f8f9fa; }
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+  .transition-soft { transition: all .4s cubic-bezier(.16,1,.3,1); }
+</style>
+</head>
+<body class="text-on-surface">
+<nav id="site-nav" class="fixed top-0 w-full z-50 bg-surface border-b border-outline-variant">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4">
+<a href="index.html" class="text-[18px] md:text-headline-md font-headline-md font-bold text-primary tracking-tighter">APOLLO PAINTS</a>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-on-surface-variant hover:text-industrial-orange font-label-caps text-label-caps font-bold transition-colors duration-200" href="index.html">Home</a>
+<a class="text-industrial-orange border-b-2 border-industrial-orange pb-1 font-label-caps text-label-caps font-bold transition-colors duration-200" href="catalog.html">Products</a>
+<a class="text-on-surface-variant hover:text-industrial-orange font-label-caps text-label-caps font-bold transition-colors duration-200" href="industries.html">Industries</a>
+<a class="text-on-surface-variant hover:text-industrial-orange font-label-caps text-label-caps font-bold transition-colors duration-200" href="about.html">About Us</a>
+</div>
+<div class="flex items-center gap-3">
+<a href="inquiry.html" class="bg-primary text-on-primary px-5 md:px-6 py-3 font-label-caps text-label-caps hover:bg-industrial-orange transition-soft">GET A QUOTE</a>
+<button id="menu-btn" class="md:hidden text-primary" aria-label="Menu"><span class="material-symbols-outlined">menu</span></button>
+</div>
+</div>
+<div id="mobile-menu" class="hidden md:hidden flex-col gap-1 px-margin-mobile pb-4 border-t border-outline-variant">
+<a class="py-3 font-label-caps text-label-caps text-on-surface-variant" href="index.html">HOME</a>
+<a class="py-3 font-label-caps text-label-caps text-on-surface-variant" href="catalog.html">PRODUCTS</a>
+<a class="py-3 font-label-caps text-label-caps text-on-surface-variant" href="industries.html">INDUSTRIES</a>
+<a class="py-3 font-label-caps text-label-caps text-on-surface-variant" href="about.html">ABOUT US</a>
+</div>
+</nav>
+<main class="pt-24 pb-32 min-h-screen">
+<div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop">
+
+<div class="border-b border-outline-variant pb-6 mb-8">
+<span class="font-label-caps text-label-caps text-industrial-orange mb-2 block">CATALOGUE</span>
+<h1 class="font-display-lg text-[28px] md:text-display-lg text-primary mb-3">Our Products</h1>
+<p class="text-body-lg text-on-surface-variant max-w-2xl">Select any products you'd like priced, then send one enquiry. Pricing is quoted per order &mdash; volume, shade and pack size all affect the rate.</p>
+</div>
+
+<div class="flex flex-col lg:flex-row lg:items-center gap-4 mb-8">
+<div class="relative flex-grow max-w-md">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline">search</span>
+<input id="search" type="text" placeholder="Search products&hellip;" class="w-full pl-10 pr-4 py-3 bg-surface-white border border-outline-variant focus:border-industrial-orange outline-none text-body-md"/>
+</div>
+<div id="cat-filters" class="flex flex-wrap gap-2"></div>
+</div>
+
+<p id="result-count" class="font-label-caps text-label-caps text-outline mb-6"></p>
+<div id="grid" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-gutter"></div>
+<p id="empty" class="hidden py-16 text-center text-on-surface-variant">No products match that search.</p>
+</div>
+</main>
+
+<div id="tray" class="fixed bottom-0 left-0 w-full z-40 bg-primary text-on-primary translate-y-full transition-transform duration-300">
+<div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop py-4 flex flex-col sm:flex-row sm:items-center gap-4 justify-between">
+<div class="flex items-center gap-3 min-w-0">
+<span class="material-symbols-outlined text-secondary-fixed-dim">request_quote</span>
+<div class="min-w-0">
+<p class="font-label-caps text-label-caps text-secondary-fixed-dim"><span id="tray-count">0</span> PRODUCTS SELECTED</p>
+<p id="tray-names" class="text-body-md text-primary-fixed-dim truncate"></p>
+</div>
+</div>
+<div class="flex items-center gap-3 shrink-0">
+<button id="tray-clear" class="font-label-caps text-label-caps text-primary-fixed-dim hover:text-on-primary transition-colors px-3 py-3">CLEAR</button>
+<a id="tray-go" href="inquiry.html" class="bg-industrial-orange text-white px-8 py-4 font-label-caps text-label-caps flex items-center gap-2 hover:brightness-110 transition-soft">REQUEST QUOTE <span class="material-symbols-outlined text-[16px]">arrow_forward</span></a>
+</div>
+</div>
+</div>
+
+<script>
+const PRODUCTS = [
+{
+"id": "industrial-coatings::Primers",
+"name": "Primers",
+"cat": "Industrial Coatings",
+"catId": "industrial-coatings",
+"desc": "Anti-corrosive base coats that build adhesion between the metal substrate and the finish system.",
+"img": "images/primers.jpg"
+},
+{
+"id": "industrial-coatings::Synthetic Enamel",
+"name": "Synthetic Enamel",
+"cat": "Industrial Coatings",
+"catId": "industrial-coatings",
+"desc": "Air-drying alkyd enamels giving a hard, glossy film for general-purpose metal finishing.",
+"img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDcyCMQ_mdoQKUvUXmr5ar2lyoxfJs-UAvogG0pMe6V_B_vss_SGYc7XBFRNWwBG06snfpAYFCKXUHEyGGdfWEybyOOxWq1uSU0GTIPThRw0jdz3XCofFL2IGpbd7GvvCi9ibd2-s3fffrcE0M8TqE5OOaI0shQ9OmNkwzGISRZdBYMu7tJPkRvqxSYJ1LR26b9VOBG4ZP9zkxfRjo8hNKp6J_Z9A0OJt_iOTko7ET-bDpgjwLNn_S4311t2z3E_jBzlwEDmHqOdgtR"
+},
+{
+"id": "industrial-coatings::PU Enamel",
+"name": "PU Enamel",
+"cat": "Industrial Coatings",
+"catId": "industrial-coatings",
+"desc": "Two-pack polyurethane finishes for higher gloss retention and resistance to weathering and chemicals.",
+"img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBNwXEWlgY90mxxG1NpBONE-pGpUxF5n1VijyUsA-GO5Z8DejdiRG5xa8q9uP6in6A5XiNtxGizoSrPfeEGamWCsXKmPESy_PyI_H-VqKgTbfeyYaH7yQ8xrNfe8Y0csOS-kldy7R7E-Yj_2L0dUQNWntUm3eTFkOEnNy52Y3IrcOfP7hNM3SgdVNIQcgeLlP3pLYPYkPkIy1LGB2tkBF_vScGLwXHl98zl6JvnVgH5olhKzLwq6yquKQfu2mWPkDiFlJMCAgJQy2Ku"
+},
+{
+"id": "industrial-coatings::Automotive Finishes",
+"name": "Automotive Finishes",
+"cat": "Industrial Coatings",
+"catId": "industrial-coatings",
+"desc": "Fast-drying topcoats and refinish systems for vehicle bodies, parts and components.",
+"img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDNLC1l51salM_u7XihaxauN5Amd_Dfw7dLhmrtY9Vmag0TA7hvCE7V_zhvONH0v2K1LjLyA6vgk2c0x486gKzaI-LIFvjs-O-BjzKMi3JasiiiQTxGBl_kDco3xskVsjnFci5fCJdIIeXzlVa02BaYOUA5TQVz1IOLr3Bz92Kq2w45zNbTfJbz26SzWNg_aOIsaPgqEL2sry-X2rSqOTaDKi556EkiJp-_3GybMY77FdfFJMo8JxoAdd-wZS8nDExMwFsP6EF69hQP"
+},
+{
+"id": "industrial-coatings::Texture Finishes",
+"name": "Texture Finishes",
+"cat": "Industrial Coatings",
+"catId": "industrial-coatings",
+"desc": "Heavy-bodied coatings that produce a patterned matte surface and mask minor substrate defects.",
+"img": "https://lh3.googleusercontent.com/aida-public/AB6AXuAyDxI3vAm_DL9E4cmCQImZ14qXK1y5TXdielEhlaokryRsL0UOVJFiPhAGW1JUfnYLCQrMZYWzvCLJCrdlXTwb3Y8jmgo_WYamxBYSljXj3eds21aVV6Ol7X58bNmBEHBJnY0NXyzwTsRT2DIqgx5NDCwzBJSYFWp6Md9seZeTrGMZKI79_tuOZKF9WRsoiM8RZEEvvWOIXCy8QYnZub-qE--cgfYguAy-kP0t--WwOdvFMrYxbnrTWsYnsqpZCFE4TsKtqNNgjAE5"
+},
+{
+"id": "industrial-coatings::Synthetic Putty",
+"name": "Synthetic Putty",
+"cat": "Industrial Coatings",
+"catId": "industrial-coatings",
+"desc": "Fine-grain filler for levelling dents and pinholes before priming.",
+"img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCQriOZ-I14QYEszSMPvTlpEoRYBj4MvI-WHLD792UR1oZRhkv4-L-blKFuwslBn5_W86ocrfquDWtAuVnaRM8q82dlGo7CfnOZHcIdWCFsXbuZg9IY-HzRP9l922MPWqOl8RwOBzyV2ahJ88d_0cthJ76x6OB6nydOZG0oTOFo-7wSXSwYWCoakdEhBDpRT0j0sn-MONt3LJdat8S0xE38dNobc3SFAuhs3CrQjxcmPj5EJq1XkgeiTOkMF0vAXJJiANSHMH5PaTcr"
+},
+{
+"id": "wood-finishes::Lacquer",
+"name": "Lacquer",
+"cat": "Wood Finishes",
+"catId": "wood-finishes",
+"desc": "Fast-drying clear and pigmented lacquers for a smooth, close-grain finish on wood.",
+"img": "https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=800&q=80"
+},
+{
+"id": "wood-finishes::Sealers",
+"name": "Sealers",
+"cat": "Wood Finishes",
+"catId": "wood-finishes",
+"desc": "Grain-filling sealers that stabilise the surface and reduce topcoat consumption.",
+"img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDEbSgiufRatqIriM1WGsXib6Vccxauxm3WdiJMrLKePB6rwyeWfbGC5oN06QzzlQnBoVop4CqFZmoFXKio6F6rUTwjZYWkAE1aDr1wRCZpRQj9QVLlWQumi5vB7eay0eEJqT1a_bNCysGAbnpWHUcipB_g3d7jfaIjvzLwGLCaEqDYdsbHFmUmJa6EfLsTrhzu11gXutShr5g-nGKtDhHWApug0UgrhJ3dBuaScI5P9sAZvL-kc5cY5DaiOTurKAoOvToGkLHpNWgz"
+},
+{
+"id": "speciality-epoxies::3:1 Epoxy Systems",
+"name": "3:1 Epoxy Systems",
+"cat": "Speciality Epoxies",
+"catId": "speciality-epoxies",
+"desc": "Three-part-to-one hardener epoxies for high-build protective coating of floors and structures.",
+"img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBZc2eZO8kX_oPn09C35qS7EkjWrWTywL_zgJrcAB1eW9GHSPAnPAuuF8hs6aWQmjcoGZPIqxDf7LJzFgHxE-PFEk77dNMgOpPPSftheF-0Zxh40BlaW76GF5v3fDMGSXuyXK7hOWg8-BG2JV8z5371bYXYjE17dBPjy0o4JK7nkUFv1MA1I7uqwF1kokInOCVDiuctDKkZT_58V8mLnx5OBuX5gdv6NhnvHbJTZLg7zGnHb7Wda09lVnOCSTryvAR8DuYRX4_v8z8H"
+},
+{
+"id": "speciality-epoxies::2:1 Epoxy Systems",
+"name": "2:1 Epoxy Systems",
+"cat": "Speciality Epoxies",
+"catId": "speciality-epoxies",
+"desc": "Two-part-to-one hardener epoxies for chemical-resistant coating where a thinner film is required.",
+"img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCqhERi9c1ShkCYkerzE15S7yDzn5EffEsvcJTZfRO1DT0zTaJkO3rKbN0YZUVxkOiR--LmuSy5bgjKqySvEwCjUmFBIO96bsaXE-CXuK3MUbnhVGC_NjL0KMnIWm-htVdVUyvwF-VD1SG1Fut5NWwwwPaSvYXzeIBG8FJi9TLxBvIkwB7boWyR4_k63I28voILCaDOk7EzPpGB5Ybq3uuu446WK580lxySiHHLMK4NZKdXuR_vH2ePXL7ATFM6OcY-UZ3AhZAkmzJI"
+},
+{
+"id": "speciality-resins::Alkyds",
+"name": "Alkyds",
+"cat": "Speciality Resins",
+"catId": "speciality-resins",
+"desc": "Base polyester resins for solvent-borne enamels, primers and general industrial coatings.",
+"img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDlx5qdRgAHEYHDfuCAHz9QHCWOwpf3ligFmEvYshYDNK6AeKb-imKiNsjlolgEohtn7AFqgUpec2-fnW4PGWUt48QdFfNlQvlABvdRTdN5DIOafz3b0be0_QLk3qMUyvpxCTjy3eX1J_ybHC4k9IwdNR9a8QDqr51vByFNuNM9VvNPI0-9I_Dnaz_ncG5lPv6LlPHwkDoA7F-1clIg0-MUVheteCPYRwDUM-hrSp8tiRFSoJBKZz3dC_olEloi-oP0jRVSlAUwjpAf"
+},
+{
+"id": "speciality-resins::Rosinated Alkyds",
+"name": "Rosinated Alkyds",
+"cat": "Speciality Resins",
+"catId": "speciality-resins",
+"desc": "Rosin-modified alkyds offering faster dry and higher initial gloss in economy coating systems.",
+"img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDcyCMQ_mdoQKUvUXmr5ar2lyoxfJs-UAvogG0pMe6V_B_vss_SGYc7XBFRNWwBG06snfpAYFCKXUHEyGGdfWEybyOOxWq1uSU0GTIPThRw0jdz3XCofFL2IGpbd7GvvCi9ibd2-s3fffrcE0M8TqE5OOaI0shQ9OmNkwzGISRZdBYMu7tJPkRvqxSYJ1LR26b9VOBG4ZP9zkxfRjo8hNKp6J_Z9A0OJt_iOTko7ET-bDpgjwLNn_S4311t2z3E_jBzlwEDmHqOdgtR"
+},
+{
+"id": "speciality-resins::Uralkyds",
+"name": "Uralkyds",
+"cat": "Speciality Resins",
+"catId": "speciality-resins",
+"desc": "Urethane-modified alkyds with improved hardness, abrasion resistance and drying speed.",
+"img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDlx5qdRgAHEYHDfuCAHz9QHCWOwpf3ligFmEvYshYDNK6AeKb-imKiNsjlolgEohtn7AFqgUpec2-fnW4PGWUt48QdFfNlQvlABvdRTdN5DIOafz3b0be0_QLk3qMUyvpxCTjy3eX1J_ybHC4k9IwdNR9a8QDqr51vByFNuNM9VvNPI0-9I_Dnaz_ncG5lPv6LlPHwkDoA7F-1clIg0-MUVheteCPYRwDUM-hrSp8tiRFSoJBKZz3dC_olEloi-oP0jRVSlAUwjpAf"
+},
+{
+"id": "speciality-resins::CNSL",
+"name": "CNSL",
+"cat": "Speciality Resins",
+"catId": "speciality-resins",
+"desc": "Cashew nut shell liquid based resins used in friction, coating and speciality chemical applications.",
+"img": "https://lh3.googleusercontent.com/aida-public/AB6AXuC5Rw_6WKxGJOr6BINDEWdtifdPpEdwOsZpan4vcnJfDS1jf0nlQgWArG3OHGs8jhMI0zCRnshK5fuChr2QYWZyneyS1_0wjmkhbHM3HSOqBFT7aSSS5ZmJb7K2nCLWwZw4HjLneRY-5_5NCudyu4teyj-3vjbClRTB-n6TDT8xiyF6bjk0NngeT9KNOF31NLzUQMwmMLdG5eHUq9EaZWu0Nl-_zrXol2bkt61wPHOMEP_twR1RB9r9s9Y3RX5GDj-WroLJxGrk3nhX"
+},
+{
+"id": "speciality-resins::Epoxy Advance Systems",
+"name": "Epoxy Advance Systems",
+"cat": "Speciality Resins",
+"catId": "speciality-resins",
+"desc": "Custom epoxy resin and hardener combinations supplied to formulators' specifications.",
+"img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDNLC1l51salM_u7XihaxauN5Amd_Dfw7dLhmrtY9Vmag0TA7hvCE7V_zhvONH0v2K1LjLyA6vgk2c0x486gKzaI-LIFvjs-O-BjzKMi3JasiiiQTxGBl_kDco3xskVsjnFci5fCJdIIeXzlVa02BaYOUA5TQVz1IOLr3Bz92Kq2w45zNbTfJbz26SzWNg_aOIsaPgqEL2sry-X2rSqOTaDKi556EkiJp-_3GybMY77FdfFJMo8JxoAdd-wZS8nDExMwFsP6EF69hQP"
+}
+];
+const CATS = [
+{
+"id": "industrial-coatings",
+"name": "Industrial Coatings",
+"blurb": "High-performance protection for metal substrates. Engineered to withstand corrosion, extreme weather and harsh industrial environments.",
+"icon": "shield"
+},
+{
+"id": "wood-finishes",
+"name": "Wood Finishes",
+"blurb": "Stains, lacquers and sealers designed to protect and enhance the natural grain and longevity of wood surfaces.",
+"icon": "water_drop"
+},
+{
+"id": "speciality-epoxies",
+"name": "Speciality Epoxies",
+"blurb": "Heavy-duty epoxy systems formulated for chemical resistance, mechanical strength and seamless application.",
+"icon": "layers"
+},
+{
+"id": "speciality-resins",
+"name": "Speciality Resins",
+"blurb": "Polymer resins supplied to formulators as the building blocks for coatings and composite materials.",
+"icon": "science"
+}
+];
+const selected = new Set();
+let activeCat = new URLSearchParams(location.search).get('category') || 'all';
+let query = '';
+
+const grid = document.getElementById('grid');
+const tray = document.getElementById('tray');
+const filters = document.getElementById('cat-filters');
+
+function chipClass(on) {
+  return 'px-5 py-3 font-label-caps text-label-caps border transition-soft ' +
+    (on ? 'bg-primary text-on-primary border-primary' : 'bg-surface-white text-on-surface-variant border-outline-variant hover:border-industrial-orange hover:text-industrial-orange');
+}
+
+function renderFilters() {
+  const all = [{id:'all',name:'All Products'}].concat(CATS);
+  filters.innerHTML = '';
+  all.forEach(c => {
+    const b = document.createElement('button');
+    b.textContent = c.name;
+    b.className = chipClass(activeCat === c.id);
+    b.onclick = () => { activeCat = c.id; renderFilters(); render(); };
+    filters.appendChild(b);
+  });
+}
+
+function card(p) {
+  const on = selected.has(p.id);
+  return `<div class="group bg-surface-white border ${on ? 'border-industrial-orange' : 'border-outline-variant'} hover:border-deep-slate transition-all duration-300 flex flex-col">
+    <div class="relative h-56 overflow-hidden bg-surface-container">
+      <img src="${p.img}" alt="${p.name}" referrerpolicy="no-referrer" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"/>
+      <div class="absolute top-4 left-4 bg-primary text-on-primary font-label-caps text-[10px] px-3 py-1">${p.cat.toUpperCase()}</div>
+    </div>
+    <div class="p-6 flex flex-col flex-grow">
+      <h3 class="font-headline-md text-[20px] text-deep-slate leading-tight mb-2">${p.name}</h3>
+      <p class="text-body-md text-on-surface-variant text-[14px] mb-6 flex-grow">${p.desc}</p>
+      <button data-id="${p.id}" class="js-toggle mt-auto w-full py-3 font-label-caps text-label-caps flex items-center justify-center gap-2 transition-soft ${on ? 'bg-industrial-orange text-white' : 'bg-surface-container-low text-deep-slate hover:bg-primary hover:text-on-primary'}">
+        <span class="material-symbols-outlined text-[16px]">${on ? 'check' : 'add'}</span>${on ? 'ADDED TO QUOTE' : 'ADD TO QUOTE'}
+      </button>
+    </div>
+  </div>`;
+}
+
+function render() {
+  const q = query.trim().toLowerCase();
+  const list = PRODUCTS.filter(p =>
+    (activeCat === 'all' || p.catId === activeCat) &&
+    (!q || (p.name + ' ' + p.cat + ' ' + p.desc).toLowerCase().includes(q))
+  );
+  grid.innerHTML = list.map(card).join('');
+  document.getElementById('empty').classList.toggle('hidden', list.length > 0);
+  document.getElementById('result-count').textContent =
+    'SHOWING ' + list.length + ' OF ' + PRODUCTS.length + ' PRODUCTS';
+  grid.querySelectorAll('.js-toggle').forEach(b => {
+    b.onclick = () => {
+      const id = b.getAttribute('data-id');
+      selected.has(id) ? selected.delete(id) : selected.add(id);
+      render(); renderTray();
+    };
+  });
+}
+
+function renderTray() {
+  const names = PRODUCTS.filter(p => selected.has(p.id)).map(p => p.cat + ' \u2013 ' + p.name);
+  document.getElementById('tray-count').textContent = names.length;
+  document.getElementById('tray-names').textContent = names.join(', ');
+  document.getElementById('tray-go').href = 'inquiry.html?products=' + encodeURIComponent(names.join('|'));
+  tray.classList.toggle('translate-y-full', names.length === 0);
+  document.body.style.paddingBottom = names.length ? '120px' : '0';
+  // lift the WhatsApp button clear of the tray so it never covers the CTA
+  const fab = document.getElementById('wa-fab');
+  if (fab) fab.style.transform = names.length ? 'translateY(-108px)' : 'none';
+}
+
+document.getElementById('search').addEventListener('input', e => { query = e.target.value; render(); });
+document.getElementById('tray-clear').onclick = () => { selected.clear(); render(); renderTray(); };
+renderFilters(); render(); renderTray();
+</script>
+<footer class="w-full py-16 px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter bg-primary text-on-primary">
+<div class="col-span-1 md:col-span-2">
+<div class="font-headline-md text-headline-md mb-4">APOLLO PAINTS</div>
+<p class="font-body-md text-body-md text-surface-variant opacity-70 max-w-sm">Manufacturers of industrial coatings, wood finishes, speciality epoxies and resins.</p>
+</div>
+<div class="flex flex-col gap-3">
+<h5 class="font-label-caps text-label-caps text-secondary-fixed mb-1">EXPLORE</h5>
+<a class="text-surface-variant text-body-md hover:text-secondary-fixed-dim transition-colors" href="catalog.html">Products</a>
+<a class="text-surface-variant text-body-md hover:text-secondary-fixed-dim transition-colors" href="industries.html">Industries We Serve</a>
+<a class="text-surface-variant text-body-md hover:text-secondary-fixed-dim transition-colors" href="about.html">About Us</a>
+<a class="text-surface-variant text-body-md hover:text-secondary-fixed-dim transition-colors" href="inquiry.html">Request a Quote</a>
+</div>
+<div class="flex flex-col gap-3">
+<h5 class="font-label-caps text-label-caps text-secondary-fixed mb-1">CONTACT</h5>
+<p class="text-surface-variant text-body-md opacity-80">Village Jairampur<br/>Karnal, Haryana &ndash; 132001</p>
+<a class="text-surface-variant text-body-md hover:text-secondary-fixed-dim transition-colors" href="tel:+917494988779">+91 74949 88779</a>
+<a class="text-surface-variant text-body-md hover:text-secondary-fixed-dim transition-colors" href="mailto:sales@apollopaintsglobal.com">sales@apollopaintsglobal.com</a>
+<p class="text-surface-variant text-body-md opacity-60">Mon&ndash;Sat, 9am to 6pm</p>
+</div>
+<div class="col-span-1 md:col-span-4 border-t border-on-primary-fixed-variant pt-6 mt-4">
+<p class="font-label-caps text-[10px] text-on-primary-fixed-variant">&copy; 2026 Apollo Paints. All rights reserved.</p>
+</div>
+</footer>
+<a id="wa-fab" href="https://wa.me/917494988779?text=Hello%2C%20I%27d%20like%20a%20quote%20on%20Apollo%20Paints%20products." target="_blank" rel="noopener noreferrer"
+   class="fixed bottom-6 right-6 z-40 flex items-center justify-center w-14 h-14 bg-[#25D366] text-white rounded-full shadow-lg hover:brightness-110 transition-all duration-300" aria-label="WhatsApp">
+<span class="material-symbols-outlined">chat</span>
+</a>
+<script>
+(function(){
+  var b=document.getElementById('menu-btn'),m=document.getElementById('mobile-menu');
+  if(b){b.addEventListener('click',function(){m.classList.toggle('hidden');m.classList.toggle('flex');});}
+  window.addEventListener('scroll',function(){
+    var n=document.getElementById('site-nav');
+    if(window.scrollY>40){n.classList.add('shadow-sm');}else{n.classList.remove('shadow-sm');}
+  });
+})();
+</script>
+</body>
+</html>

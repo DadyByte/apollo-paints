@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>APPOLLO PAINTS | Performance Coatings</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;family=Montserrat:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "surface-variant": "#e1e3e4",
+                "primary-fixed-dim": "#b5c8df",
+                "on-tertiary-fixed": "#291802",
+                "deep-slate": "#34495E",
+                "on-primary-fixed": "#091d2e",
+                "tertiary-container": "#4e381c",
+                "primary-container": "#2c3e50",
+                "secondary": "#944a00",
+                "on-surface": "#191c1d",
+                "surface-container-lowest": "#ffffff",
+                "inverse-surface": "#2e3132",
+                "secondary-fixed-dim": "#ffb783",
+                "error-container": "#ffdad6",
+                "primary-fixed": "#d1e4fb",
+                "on-tertiary": "#ffffff",
+                "tertiary-fixed": "#ffddb7",
+                "outline-variant": "#c4c6cd",
+                "cobalt-pigment": "#2980B9",
+                "surface-tint": "#4e6073",
+                "on-primary-fixed-variant": "#36485b",
+                "primary": "#162839",
+                "tertiary-fixed-dim": "#e3c19b",
+                "surface-container-highest": "#e1e3e4",
+                "surface": "#f8f9fa",
+                "surface-container-high": "#e7e8e9",
+                "on-background": "#191c1d",
+                "on-tertiary-container": "#c1a17d",
+                "outline": "#74777d",
+                "tertiary": "#362308",
+                "on-error-container": "#93000a",
+                "surface-container-low": "#f3f4f5",
+                "background": "#f8f9fa",
+                "surface-white": "#FFFFFF",
+                "on-primary": "#ffffff",
+                "inverse-on-surface": "#f0f1f2",
+                "on-secondary": "#ffffff",
+                "secondary-container": "#fc8f34",
+                "on-error": "#ffffff",
+                "on-secondary-fixed": "#301400",
+                "on-surface-variant": "#43474c",
+                "on-primary-container": "#96a9be",
+                "secondary-fixed": "#ffdcc5",
+                "surface-container": "#edeeef",
+                "error": "#ba1a1a",
+                "on-secondary-fixed-variant": "#713700",
+                "industrial-orange": "#D35400",
+                "on-secondary-container": "#663100",
+                "surface-dim": "#d9dadb",
+                "surface-bright": "#f8f9fa",
+                "on-tertiary-fixed-variant": "#5a4225",
+                "inverse-primary": "#b5c8df"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.125rem",
+                "lg": "0.25rem",
+                "xl": "0.5rem",
+                "full": "9999px"
+            },
+            "spacing": {
+                "margin-mobile": "20px",
+                "gutter": "24px",
+                "container-max": "1280px",
+                "unit": "8px",
+                "margin-desktop": "64px"
+            },
+            "fontFamily": {
+                "body-md": ["Inter"],
+                "display-lg": ["Montserrat"],
+                "headline-md": ["Montserrat"],
+                "label-caps": ["Inter"],
+                "body-lg": ["Inter"],
+                "display-lg-mobile": ["Montserrat"]
+            },
+            "fontSize": {
+                "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                "display-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; background-color: #f8f9fa; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .transition-soft { transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); }
+    </style>
+</head>
+<body class="text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 bg-surface border-b border-outline-variant">
+<a href="index.html" class="text-[18px] md:text-headline-md font-headline-md font-bold text-primary tracking-tighter">
+            APPOLLO PAINTS
+        </a>
+<div class="hidden md:flex gap-10 items-center">
+<a class="text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-secondary transition-colors duration-200" href="catalog.html">Products</a>
+<a class="text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-secondary transition-colors duration-200" href="industries.html">Industries</a>
+<a class="text-on-surface-variant font-medium font-label-caps text-label-caps hover:text-secondary transition-colors duration-200" href="about.html">About Us</a>
+</div>
+<div class="flex items-center gap-6">
+<div class="hidden lg:flex items-center border-b border-outline py-1">
+<span class="material-symbols-outlined text-outline text-[20px] mr-2">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-label-caps font-label-caps p-0 w-32" placeholder="Search Catalog" type="text"/>
+</div>
+<a href="inquiry.html" class="bg-primary text-on-primary px-6 py-3 font-label-caps text-label-caps hover:bg-deep-slate transition-soft">
+                B2B Inquiry
+            </a>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative h-[921px] flex items-center px-margin-mobile md:px-margin-desktop overflow-hidden bg-surface">
+<div class="z-10 max-w-2xl">
+<span class="font-label-caps text-label-caps text-industrial-orange tracking-[0.2em] mb-4 block">PREMIUM INDUSTRIAL COATINGS</span>
+<h1 class="font-display-lg text-display-lg md:text-[72px] text-primary mb-6 leading-tight">
+                    Performance Coatings that <span class="text-deep-slate italic">Define</span> Structures
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-lg">
+                    Engineered for the most demanding architectural environments. Appollo Paints Global delivers technical precision and aesthetic longevity for iconic skylines.
+                </p>
+<div class="flex gap-4">
+<a href="catalog.html" class="bg-primary text-on-primary px-10 py-5 font-label-caps text-label-caps flex items-center gap-3 transition-soft hover:gap-5">
+                        VIEW CATALOG <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+<button class="border-2 border-primary text-primary px-10 py-5 font-label-caps text-label-caps hover:bg-primary hover:text-on-primary transition-soft">
+                        OUR TECHNOLOGY
+                    </button>
+</div>
+</div>
+<div class="absolute right-0 top-0 w-1/2 h-full hidden lg:block">
+<img class="w-full h-full object-cover" data-alt="A macro architectural shot of a ultra-modern skyscraper with a smooth matte silver-grey finish. The lighting is crisp morning sun creating high-contrast shadows against a cloudless deep blue sky. The visual style is highly polished, professional, and minimalist, emphasizing the pristine quality of the exterior coating and the sharp geometric lines of the steel structure." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJkEwmYAT8zK1c-AThwAbgzDESkTDaOzIzKyslFMa7W42yLkWZqIYBzDNwQf7F_7cbmM9oBIKvqjDyRj83r0OcdcdLDli6pNyE_Rd_I_p7jPgLVzXvixuiPFDNZo53UOGwuMlt0gWcPZ87fvv0UasE1d3mjCBQSQCdwSRw0qcMyy79OaGt3iyfFrBOypvWtLPadPiRVYeCaKOxMXV5KXPH_PXG1CWwOdtOTlyHH8qfS3P07RvZatEOb5eg95m2MCluWB5X_1cT4482"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface via-transparent to-transparent"></div>
+</div>
+</section>
+<!-- Technical Excellence - Bento Grid -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop bg-surface-white">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-8">
+<div class="relative group overflow-hidden h-[400px] border border-outline-variant">
+<img class="w-full h-full object-cover transition-soft group-hover:scale-105" data-alt="A high-tech laboratory setting where a robotic arm is precisely applying a vivid cobalt blue coating to a sleek industrial component. The scene is illuminated with cool-toned clinical white light, emphasizing a sterile and advanced technological environment. The aesthetic is clean, industrial-modern, with subtle depth from low-contrast shadows and structural glass partitions." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNLC1l51salM_u7XihaxauN5Amd_Dfw7dLhmrtY9Vmag0TA7hvCE7V_zhvONH0v2K1LjLyA6vgk2c0x486gKzaI-LIFvjs-O-BjzKMi3JasiiiQTxGBl_kDco3xskVsjnFci5fCJdIIeXzlVa02BaYOUA5TQVz1IOLr3Bz92Kq2w45zNbTfJbz26SzWNg_aOIsaPgqEL2sry-X2rSqOTaDKi556EkiJp-_3GybMY77FdfFJMo8JxoAdd-wZS8nDExMwFsP6EF69hQP"/>
+<div class="absolute bottom-0 left-0 p-10 bg-gradient-to-t from-black/60 to-transparent w-full">
+<h3 class="font-headline-md text-headline-md text-white mb-2">Advanced Technology</h3>
+<p class="text-white/80 font-body-md text-body-md max-w-md">Utilizing molecular-level bonding for unmatched surface adhesion and color retention in extreme climates.</p>
+</div>
+</div>
+</div>
+<div class="md:col-span-4 flex flex-col justify-center border-l-2 border-industrial-orange pl-10">
+<span class="font-label-caps text-label-caps text-industrial-orange mb-4">INNOVATION HUB</span>
+<h2 class="font-display-lg text-headline-md text-primary mb-6">Redefining Chemical Durability</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Our R&amp;D centers focus on the intersection of polymer science and architectural aesthetics, ensuring every drop of Appollo Paint exceeds ISO standards.</p>
+</div>
+<div class="md:col-span-4">
+<div class="p-10 border border-outline-variant h-full flex flex-col justify-between hover:bg-primary group transition-soft">
+<div>
+<span class="material-symbols-outlined text-[48px] text-industrial-orange mb-6 group-hover:text-white transition-soft" data-weight="fill">shield_with_heart</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-4 group-hover:text-white transition-soft">Industrial Resilience</h3>
+<p class="font-body-md text-body-md text-on-surface-variant group-hover:text-white/70 transition-soft">Anti-corrosive formulations designed for offshore rigs, infrastructure, and heavy manufacturing facilities.</p>
+</div>
+<a class="mt-8 font-label-caps text-label-caps text-primary group-hover:text-white flex items-center gap-2" href="#">LEARN MORE <span class="material-symbols-outlined text-[16px]">north_east</span></a>
+</div>
+</div>
+<div class="md:col-span-8">
+<div class="relative group overflow-hidden h-[400px] border border-outline-variant">
+<img class="w-full h-full object-cover transition-soft group-hover:scale-105" data-alt="A sustainable architectural project featuring a vertical garden integrated into a modern building facade with warm, earth-toned protective coatings. The lighting is soft, natural afternoon sunlight, creating a serene and eco-friendly atmosphere. The style is minimalist and clean, highlighting the harmony between industrial engineering and environmental responsibility." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5Rw_6WKxGJOr6BINDEWdtifdPpEdwOsZpan4vcnJfDS1jf0nlQgWArG3OHGs8jhMI0zCRnshK5fuChr2QYWZyneyS1_0wjmkhbHM3HSOqBFT7aSSS5ZmJb7K2nCLWwZw4HjLneRY-5_5NCudyu4teyj-3vjbClRTB-n6TDT8xiyF6bjk0NngeT9KNOF31NLzUQMwmMLdG5eHUq9EaZWu0Nl-_zrXol2bkt61wPHOMEP_twR1RB9r9s9Y3RX5GDj-WroLJxGrk3nhX"/>
+<div class="absolute top-10 left-10 max-w-sm">
+<div class="bg-surface-white/90 backdrop-blur-md p-8 border border-outline-variant">
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Eco-friendly Formulations</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Zero-VOC solutions that prioritize indoor air quality and environmental health without compromising on finish.</p>
+<span class="inline-flex items-center gap-2 bg-cobalt-pigment/10 text-cobalt-pigment px-3 py-1 text-label-caps font-label-caps">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">eco</span> LEED CERTIFIED
+                                </span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats Section -->
+<section class="py-20 bg-primary text-on-primary px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-gutter text-center">
+<div>
+<div class="text-[56px] font-display-lg text-secondary-fixed-dim">50+</div>
+<div class="font-label-caps text-label-caps text-on-primary-fixed-variant tracking-widest">COUNTRIES SERVED</div>
+</div>
+<div>
+<div class="text-[56px] font-display-lg text-secondary-fixed-dim">1.2B</div>
+<div class="font-label-caps text-label-caps text-on-primary-fixed-variant tracking-widest">SQ FT COATED</div>
+</div>
+<div>
+<div class="text-[56px] font-display-lg text-secondary-fixed-dim">ISO</div>
+<div class="font-label-caps text-label-caps text-on-primary-fixed-variant tracking-widest">9001 CERTIFIED</div>
+</div>
+<div>
+<div class="text-[56px] font-display-lg text-secondary-fixed-dim">24h</div>
+<div class="font-label-caps text-label-caps text-on-primary-fixed-variant tracking-widest">TECHNICAL SUPPORT</div>
+</div>
+</div>
+</section>
+<!-- Projects Grid -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop">
+<div class="flex justify-between items-end mb-16">
+<div>
+<span class="font-label-caps text-label-caps text-industrial-orange mb-2 block">PROJECT SHOWCASE</span>
+<h2 class="font-display-lg text-display-lg text-primary">Structures of Distinction</h2>
+</div>
+<button class="border-b-2 border-primary pb-1 font-label-caps text-label-caps text-primary hover:text-industrial-orange hover:border-industrial-orange transition-soft">VIEW ALL PROJECTS</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="group">
+<div class="aspect-[4/5] overflow-hidden mb-6">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-soft duration-700" data-alt="A futuristic airport terminal interior with vast white structural beams and glossy polished floors. The high-key lighting creates a bright, airy feeling, emphasizing the immaculate white industrial coating. The architectural style is minimalist and expansive, showcasing the technical precision of high-performance paint in a massive public space." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZc2eZO8kX_oPn09C35qS7EkjWrWTywL_zgJrcAB1eW9GHSPAnPAuuF8hs6aWQmjcoGZPIqxDf7LJzFgHxE-PFEk77dNMgOpPPSftheF-0Zxh40BlaW76GF5v3fDMGSXuyXK7hOWg8-BG2JV8z5371bYXYjE17dBPjy0o4JK7nkUFv1MA1I7uqwF1kokInOCVDiuctDKkZT_58V8mLnx5OBuX5gdv6NhnvHbJTZLg7zGnHb7Wda09lVnOCSTryvAR8DuYRX4_v8z8H"/>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant">INFRASTRUCTURE</span>
+<h4 class="font-headline-md text-headline-md text-primary mt-2">The Nexus Terminal</h4>
+</div>
+<div class="group">
+<div class="aspect-[4/5] overflow-hidden mb-6 translate-y-12">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-soft duration-700" data-alt="A luxury waterfront residence with a deep slate exterior finish that contrasts sharply against the golden sunset reflecting on the water. The architecture is sharp and modern, with large glass surfaces. The lighting is warm and dramatic, highlighting the high-quality texture and rich pigment of the premium exterior coating." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-cSa2pd7dMLXHoGqrdKZ5bNHUikW4W1S9-AUCa58MDI9WMOU99ekcJ-VdtsuZscfL7OH5dcHbyhbaVlKi-0YLfO7d_apEjT2AKMH6BVMaLfIIT48edgUindK7Ok-JZJ1RdPDlFs6_u4la-AYvk6pk_K31a1n221_sQU9j7oEM48iACIuMfAhZOGYoKkD_ikYiSatQ6itMCMhkMhfpAEWM4CGjYZYlOFy6Mn5I_L1ThubtSTn0mNMucOCxRGZuxGHHXlUPbmqlHanG"/>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant mt-14 block">RESIDENTIAL</span>
+<h4 class="font-headline-md text-headline-md text-primary mt-2">Azure Coast Estates</h4>
+</div>
+<div class="group">
+<div class="aspect-[4/5] overflow-hidden mb-6">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-soft duration-700" data-alt="A brutalist-style concrete museum with a protective clear matte finish that preserves the raw industrial texture of the building. The lighting is soft and diffused, highlighting the subtle variations in the concrete surface. The style is architectural and minimalist, emphasizing the functional beauty and longevity of specialized structural coatings." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEbSgiufRatqIriM1WGsXib6Vccxauxm3WdiJMrLKePB6rwyeWfbGC5oN06QzzlQnBoVop4CqFZmoFXKio6F6rUTwjZYWkAE1aDr1wRCZpRQj9QVLlWQumi5vB7eay0eEJqT1a_bNCysGAbnpWHUcipB_g3d7jfaIjvzLwGLCaEqDYdsbHFmUmJa6EfLsTrhzu11gXutShr5g-nGKtDhHWApug0UgrhJ3dBuaScI5P9sAZvL-kc5cY5DaiOTurKAoOvToGkLHpNWgz"/>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant">CULTURAL</span>
+<h4 class="font-headline-md text-headline-md text-primary mt-2">The Monolith Museum</h4>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-32 bg-surface-container-low px-margin-mobile md:px-margin-desktop flex flex-col items-center text-center">
+<h2 class="font-display-lg text-display-lg text-primary mb-8 max-w-3xl">Ready to Specify Performance for Your Next Project?</h2>
+<div class="flex gap-4">
+<a href="inquiry.html" class="bg-industrial-orange text-white px-12 py-5 font-label-caps text-label-caps transition-soft hover:brightness-110">REQUEST TECHNICAL SPECS</a>
+<a href="inquiry.html" class="bg-primary text-on-primary px-12 py-5 font-label-caps text-label-caps transition-soft hover:bg-deep-slate">FIND A DISTRIBUTOR</a>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-20 px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter bg-primary text-on-primary mt-auto">
+<div class="col-span-1">
+<div class="font-headline-md text-headline-md text-on-primary mb-6">APPOLLO PAINTS</div>
+<p class="font-body-md text-body-md text-surface-variant mb-8 opacity-70">Leading the world in architectural and industrial coating solutions through scientific innovation.</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 border border-on-primary-fixed-variant flex items-center justify-center hover:bg-secondary-fixed transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">share</span></a>
+<a class="w-10 h-10 border border-on-primary-fixed-variant flex items-center justify-center hover:bg-secondary-fixed transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">mail</span></a>
+<a class="w-10 h-10 border border-on-primary-fixed-variant flex items-center justify-center hover:bg-secondary-fixed transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">language</span></a>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="font-label-caps text-label-caps text-secondary-fixed mb-2">QUICK LINKS</h5>
+<a class="text-surface-variant font-body-md text-body-md hover:text-secondary-fixed-dim transition-colors" href="#">Privacy Policy</a>
+<a class="text-surface-variant font-body-md text-body-md hover:text-secondary-fixed-dim transition-colors" href="#">Industrial Specs</a>
+<a class="text-surface-variant font-body-md text-body-md hover:text-secondary-fixed-dim transition-colors" href="#">ISO Certifications</a>
+<a class="text-surface-variant font-body-md text-body-md hover:text-secondary-fixed-dim transition-colors" href="inquiry.html">Dealer Portal</a>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="font-label-caps text-label-caps text-secondary-fixed mb-2">SOLUTIONS</h5>
+<a class="text-surface-variant font-body-md text-body-md hover:text-secondary-fixed-dim transition-colors" href="#">Anti-Corrosive</a>
+<a class="text-surface-variant font-body-md text-body-md hover:text-secondary-fixed-dim transition-colors" href="#">Thermal Insulation</a>
+<a class="text-surface-variant font-body-md text-body-md hover:text-secondary-fixed-dim transition-colors" href="#">Decorative Matte</a>
+<a class="text-surface-variant font-body-md text-body-md hover:text-secondary-fixed-dim transition-colors" href="#">Marine Grade</a>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="font-label-caps text-label-caps text-secondary-fixed mb-2">GLOBAL HEADQUARTERS</h5>
+<p class="text-surface-variant font-body-md text-body-md opacity-70">1200 Innovation Drive,<br/>Industrial Hub, LX 4402<br/>contact@appollopaints.global</p>
+<div class="mt-4 border-t border-on-primary-fixed-variant pt-4">
+<p class="font-label-caps text-[10px] text-on-primary-fixed-variant">© 2024 Appollo Paints Global. All technical rights reserved.</p>
+</div>
+</div>
+</footer>
+<script>
+        // Micro-interaction for smooth scrolling and header transparency
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-sm');
+                nav.style.backgroundColor = 'rgba(248, 249, 250, 0.95)';
+                nav.style.backdropFilter = 'blur(10px)';
+            } else {
+                nav.classList.remove('shadow-sm');
+                nav.style.backgroundColor = '#f8f9fa';
+                nav.style.backdropFilter = 'none';
+            }
+        });
+
+        // Add reveal effect on scroll
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+    </script>
+</body></html>
