@@ -1,10 +1,13 @@
 # Old multi-page URLs (site/ and site-v2/) -> single-page sections.
-# Cloudflare Pages reads this from the build output root.
+# Workers Static Assets reads this from the build output root.
 /index.html       /            301
 /catalog.html     /#products   301
 /industries.html  /#industries 301
 /about.html       /#about      301
 /inquiry.html     /#contact    301
 
-# SPA fallback for anything else.
-/*                /index.html  200
+# No SPA fallback rule here on purpose.
+# Workers Static Assets already serves index.html for unmatched routes via
+# assets.not_found_handling = "single-page-application".
+# Adding `/*  /index.html  200` is rejected at deploy time: Workers auto-strips
+# `.html` and `/index`, so the rule rewrites into itself (error code 100324).
